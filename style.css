@@ -1,0 +1,294 @@
+/* ---------------------------------------------------- */
+/* color: 
+main color: #4ac0ff
+lighter color: #7dd2ff
+ */
+/* ---------------------------------------------------- */
+
+/* ---------------------------------------------------- */
+/* basic setup */
+/* ---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: rgb(87, 79, 79);
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+ion-icon {
+  font-size: 250%;
+  color: #7dd2ff;
+}
+
+/* ---------------------------------------------------- */
+/* header */
+/* ---------------------------------------------------- */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.618)),
+    url(contents/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 240%;
+  letter-spacing: 1px;
+  font-weight: 100;
+  /* word-spacing: 4px; */
+  /* text-transform: uppercase; */
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 10px 30px;
+  border: 1px solid #7dd2ff;
+  border-radius: 200px;
+  font-size: 90%;
+  text-decoration: none;
+}
+
+.btn-hungry:link,
+.btn-hungry:visited {
+  background-color: #7dd2ff;
+  color: #fff;
+}
+
+.btn-hungry:hover,
+.btn-hungry:active {
+  background-color: #4ac0ff;
+  transition: background-color 0.2s;
+}
+
+.btn-showmore:link,
+.btn-showmore:visited {
+  color: #7dd2ff;
+}
+
+.btn-showmore:hover,
+.btn-showmore:active {
+  background-color: #4ac0ff;
+  color: #fff;
+  transition: background-color 0.2s, color, 0.2s;
+}
+
+.icon {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  /* margin: 35px 15px; */
+  margin-left: 30px;
+  margin-top: 40px;
+  /* text-transform: uppercase; */
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: #7dd2ff;
+  border-bottom: 2px dotted transparent;
+  padding-bottom: 4px;
+  transition: border 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px dotted #7dd2ff;
+}
+
+/* ---------------------------------------------------- */
+/* feature */
+/* ---------------------------------------------------- */
+.feature-title {
+  text-align: center;
+  margin: 50px auto;
+  width: 65%;
+}
+
+.feature-heading {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 150%;
+  font-weight: 100;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h2:after {
+  display: block;
+  content: " ";
+  width: 150px;
+  border-bottom: 1px solid #4ac0ff;
+  margin: 30px auto;
+  /* margin-top: 30px; */
+}
+
+.feature-title p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 90%;
+}
+
+#feature .col {
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+#feature .col h3 {
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+
+/* ---------------------------------------------------- */
+/* favourites photos */
+/* ---------------------------------------------------- */
+
+#favourites {
+  padding: 50px 0px;
+}
+
+.favourites-photos {
+  list-style: none;
+  width: 100%;
+}
+
+.favourites-photos li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meals {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meals img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transform: scale(1.3);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meals img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* ---------------------------------------------------- */
+/* How it works */
+/* ---------------------------------------------------- */
+
+.steps:first-child {
+  text-align: right;
+  margin-top: 30px;
+  padding-right: 5%;
+}
+
+.steps:last-child {
+  text-align: left;
+  margin-top: 70px;
+  padding-left: 3%;
+}
+
+.iphone-image {
+  width: 40%;
+}
+
+#howitworks h2 {
+  /* margin-bottom: 30px; */
+  text-transform: uppercase;
+  font-size: 150%;
+  font-weight: 200;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.worksteps {
+  margin-bottom: 50px;
+}
+
+.worksteps:last-of-type {
+  margin-bottom: 50px;
+}
+
+.worksteps div {
+  color: #4ac0ff;
+  border: 2px solid #4ac0ff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 5px;
+  font-size: 110%;
+  float: left;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.worksteps p {
+  font-size: 90%;
+  padding-top: 1%;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
